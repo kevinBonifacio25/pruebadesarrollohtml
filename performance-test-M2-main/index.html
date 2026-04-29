@@ -83,17 +83,19 @@
 
         <!-- ABOUT -->
         <section id="about" class="about-container">
-            <h2>About the Band</h2>
+            
 
             <div class="about__content">
                 <img src="./assets/img/img-1.jpg" alt="Band photo">
 
                 <article>
-                    <p>
-                        Shattered Riffs is a high-energy rock band known for powerful live performances
-                        and raw sound.
-                    </p>
-
+                    <div>
+                        <h2>About the Band</h2>
+                        <p>
+                            Shattered Riffs is a high-energy rock band known for powerful live performances
+                            and raw sound.
+                        </p>
+                        
                     <!-- Required list -->
                     <h3>Our Influences</h3>
                     <ul>
@@ -107,15 +109,21 @@
 
         <!-- MEDIA -->
         <section id="media" class="media_container">
-            <h2>Multimedia</h2>
+            <div class="multimedia"><h2>Multimedia</h2></div>
 
-            <div class="media__grid">
-                <img src="./assets/img/img-2.jpg" alt="">
-                <img src="./assets/img/img-3.jpg" alt="">
-                <img src="./assets/img/img-4.jpg" alt="">
-                <img src="./assets/img/img-5.jpg" alt="">
-                <img src="./assets/img/img-6.jpg" alt="">
-                <img src="./assets/img/img-7.jpg" alt="">
+            <div class="carousel">
+                <button class="carousel__btn prev">‹</button>
+
+                <div class="carousel__track">
+                    <img src="./assets/img/img-2.jpg" alt="">
+                    <img src="./assets/img/img-3.jpg" alt="">
+                    <img src="./assets/img/img-4.jpg" alt="">
+                    <img src="./assets/img/img-5.jpg" alt="">
+                    <img src="./assets/img/img-6.jpg" alt="">
+                    <img src="./assets/img/img-7.jpg" alt="">
+                </div>
+
+                <button class="carousel__btn next">›</button>
             </div>
         </section>
 
@@ -128,11 +136,21 @@
 
             <!-- Another possible list -->
             <ul class="social">
-                <li><a href="#">Instagram</a></li>
-                <li><a href="#">Spotify</a></li>
-                <li><a href="#">YouTube</a></li>
+                <li><a href="#"><img src="./assets/icons/instagram.png" alt="Instagram"></a></li>
+                <li><a href="#"><img src="./assets/icons/spotify.png" alt="spotify"></a></li>
+                <li><a href="#"><img src="./assets/icons/youtube.png" alt="youtube"></a></li>
             </ul>
         </div>
+
+        <div class="formulario">
+            <p>Contact Us</p>
+            <form action="#" method="post">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+
     </footer>
 
     <script src="./assets/js/main.js"></script>
