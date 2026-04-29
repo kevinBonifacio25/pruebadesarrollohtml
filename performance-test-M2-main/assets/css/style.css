@@ -12,8 +12,8 @@ body {
     background-image: url("../img/fondo.jpg");
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-repeat: no-repeat; /* evita que el fondo se repita si la imagen es más pequeña que la pantalla */
+    background-attachment: fixed; /* hace que el fondo se quede fijo mientras se hace scroll */
 
 }
 
@@ -404,14 +404,14 @@ article li{
     gap: 20px;
 }
 
-/* TEXTO */
+/* texto footer */
 .footer p {
     margin: 0;
     font-size: 14px;
     opacity: 0.8;
 }
 
-/* REDES */
+/* redes sociales */
 .social {
     list-style: none;
     display: flex;
@@ -430,13 +430,13 @@ article li{
     transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
-/* HOVER EFECTO */
+/* efecto de hover */
 .social li a:hover {
     color: #fff;
     transform: translateY(-3px);
 }
 
-/*FORMULARIO*/
+/*formulario*/
 .formulario {
     background-color:var(--color-resalte);
     color: #ffffff;
@@ -562,7 +562,7 @@ h1, h2, h3 {
         right: 20px;
     }
 
-    /* MENÚ OCULTO POR DEFECTO */
+    /* menu oculto hasta la seleccion del usuario */
     .nav__list {
         display: flex;
         flex-direction: column;
@@ -579,7 +579,7 @@ h1, h2, h3 {
         transition: all 0.3s ease;
     }
 
-    /* MENÚ ACTIVO */
+    /* menu activo por seleccion del usuario */
     .nav__list.active {
         transform: translateY(0);
         opacity: 1;
